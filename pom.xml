@@ -19,6 +19,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <vesion.log4j>1.2.16</vesion.log4j>
         <version.maven.checkstyle.plugin>2.8</version.maven.checkstyle.plugin>
         <version.maven.compiler.plugin>2.3.2</version.maven.compiler.plugin>
         <version.maven.dependency.plugin>2.4</version.maven.dependency.plugin>
@@ -52,7 +53,12 @@
             <artifactId>testng</artifactId>
             <version>${version.testng}</version>
             <scope>test</scope>
-        </dependency>        
+        </dependency>       
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${version.log4j}</version>
+        </dependency>
     </dependencies>
 
     <build>
