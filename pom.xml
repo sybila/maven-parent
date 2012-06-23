@@ -43,6 +43,7 @@
             <id>sybila-maven-snapshots-ssh</id>
             <name>Maven snapshot repository hosted on http://sybila.fi.muni.cz</name>
             <url>scp://anna.fi.muni.cz:/srv/www/htdocs/sybila/public/maven/snapshots</url>
+            <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
         <repository>
             <id>sybila-maven-releases-ssh</id>
