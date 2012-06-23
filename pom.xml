@@ -39,10 +39,15 @@
     </licenses>
 
     <distributionManagement>
+        <snapshotRepository>
+            <id>sybila-maven-snapshots-ssh</id>
+            <name>Maven snapshot repository hosted on http://sybila.fi.muni.cz</name>
+            <url>scp://anna.fi.muni.cz:/srv/www/htdocs/sybila/public/maven/snapshots</url>
+        </snapshotRepository>
         <repository>
-            <id>sybila-maven-ssh</id>
-            <name>Maven repository hosted on http://sybila.fi.muni.cz</name>
-            <url>scp://anna.fi.muni.cz:/srv/www/htdocs/sybila/public/maven</url>
+            <id>sybila-maven-releases-ssh</id>
+            <name>Maven release repository hosted on http://sybila.fi.muni.cz</name>
+            <url>scp://anna.fi.muni.cz:/srv/www/htdocs/sybila/public/maven/releases</url>
         </repository>
     </distributionManagement>
 
@@ -81,8 +86,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${version.maven.compiler.plugin}</version>
                 <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                     <encoding>${project.build.sourceEncoding}</encoding>
                 </configuration>
             </plugin>
