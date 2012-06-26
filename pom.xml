@@ -4,7 +4,7 @@
 
     <groupId>org.sybila</groupId>
     <artifactId>sybila-parent</artifactId>
-    <version>3</version>
+    <version>4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>sybila-parent</name>
