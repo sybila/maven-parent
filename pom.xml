@@ -19,7 +19,6 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <version.wagon.ssh.extension>1.0-beta-6</version.wagon.ssh.extension>
     </properties>
 
     <licenses>
@@ -32,15 +31,15 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>sybila-maven-snapshots-ssh</id>
-            <name>Maven snapshot repository hosted on http://sybila.fi.muni.cz</name>
-            <url>scp://anna.fi.muni.cz:/srv/www/htdocs/sybila/public/maven/snapshots</url>
+            <id>sybila-cloudbees-snapshots</id>
+            <name>Maven snapshot repository hosted on cloudbees</name>
+            <url>dav:https://repository-sybila.forge.cloudbees.com/snapshot/</url>
             <uniqueVersion>false</uniqueVersion>
         </snapshotRepository>
         <repository>
-            <id>sybila-maven-releases-ssh</id>
-            <name>Maven release repository hosted on http://sybila.fi.muni.cz</name>
-            <url>scp://anna.fi.muni.cz:/srv/www/htdocs/sybila/public/maven/releases</url>
+            <id>sybila-cloudbees-releases</id>
+            <name>Maven release repository hosted on cloudbees</name>
+            <url>dav:https://repository-sybila.forge.cloudbees.com/release</url>
         </repository>
     </distributionManagement>
 
@@ -105,8 +104,8 @@
         <extensions>
             <extension>
                 <groupId>org.apache.maven.wagon</groupId>
-                <artifactId>wagon-ssh</artifactId>
-                <version>${version.wagon.ssh.extension}</version>
+                <artifactId>wagon-webdav-jackrabbit</artifactId>
+                <version>2.2</version>
             </extension>
         </extensions>
         <plugins>
