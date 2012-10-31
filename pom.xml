@@ -4,7 +4,7 @@
 
     <groupId>org.sybila</groupId>
     <artifactId>sybila-parent</artifactId>
-    <version>5</version>
+    <version>6-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>sybila-parent</name>
@@ -159,6 +159,6 @@
         <connection>scm:git:git://github.com/sybila/maven-parent.git</connection>
         <developerConnection>scm:git:git@github.com:sybila/maven-parent.git</developerConnection>
         <url>https://github.com/sybila/maven-parent</url>
-      <tag>sybila-parent-5</tag>
+      <tag>HEAD</tag>
   </scm>
 </project>
